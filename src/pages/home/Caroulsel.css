@@ -1,0 +1,13 @@
+
+
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.alice-carousel__dots-item{
+    padding: 5px;
+    background-color: rgb(191, 164, 11) !important;
+}

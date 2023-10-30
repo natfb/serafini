@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*degrade amarelo
+#9b7a1b
+#d0b564
+#eed793
+*/
+
+:root {
+  --bg-footer: rgb(203, 203, 203);
+  --amarelo-c: #9b7a1b;
+  --amarelo-b: #d0b564;
+  --amarelo-a: #eed793;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hide{
+  opacity: 0;
+  transform: translateY(100px);
+  filter: blur(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.animate{
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0px);
+}
